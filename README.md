@@ -3,7 +3,7 @@
 ## Membuat Program Konversi Suhu
 
 ### Screenshoot
-![Screenshoot](image/screenshoot.png)
+![Screenshoot](image/screenshoota.png)
 
 ### Kode HTML
 ```html
