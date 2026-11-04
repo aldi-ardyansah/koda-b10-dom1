@@ -1,0 +1,82 @@
+:root {
+    --bg-color-white: rgba(255, 253, 248, 1);
+    --bg-color-green: rgba(15, 107, 79, 1);
+
+    --font-color-black: rgba(19, 35, 27, 1);
+    --font-color-white: rgba(255, 255, 255, 1);
+
+    --border-color-gray: rgba(215, 203, 182, 1);
+    --border-color-green: rgba(15, 107, 79, 1);
+}
+
+body {
+    background-color: var(--bg-color-white);
+}
+
+.main {
+    width: 50%;
+    justify-self: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    background-color: var(--bg-color-white);
+    border: 1px solid var(--border-color-gray);
+    border-radius: 12px;
+    gap: 16px;
+}
+
+.heading {
+    text-align: center;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.output {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+#inputCelcius {
+    background-color: var(--bg-color-white);
+    border: 1px solid var(--border-color-gray);
+    color: var(--font-color-black);
+    border-radius: 999px;
+    padding: 6px 12px;
+}
+
+#hitung {
+    display: flex;
+    width: 100%;
+    background-color: var(--bg-color-green);
+    border: 1px solid var(--border-color-green);
+    color: var(--font-color-white);
+    border-radius: 999px;
+    padding: 6px 12px;
+    justify-content: center;
+}
+
+#hapus {
+    display: flex;
+    width: fit-content;
+    background-color: var(--bg-color-white);
+    border: 1px solid var(--border-color-gray);
+    color: var(--font-color-black);
+    border-radius: 999px;
+    margin-left: auto;
+    padding: 6px 12px;
+    justify-content: center;
+}
