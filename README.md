@@ -2,6 +2,9 @@
 
 ## Membuat Program Konversi Suhu
 
+### Screenshoot
+![Screenshoot](image/screenshoot.png)
+
 ### Kode HTML
 ```html
 <!DOCTYPE html>
@@ -14,9 +17,10 @@
 <body>
     <label for="suhuCelcius">Masukan suhu dalam Celcius:</label>
     <br>
-    <input type="number" id="suhuCelcius" autofocus>
+    <input type="number" id="inputCelcius" autofocus>
     <br>
     <button id="hitung">Hitung</button>
+    <button id="hapus">Hapus</button>
     <br><br>
     Suhu dalam Reamur:&nbsp;<span id="reamur"></span>
     <br>
@@ -30,9 +34,10 @@
 ### Kode JavaScript
 ```javascript
 const hitung = document.getElementById("hitung");
+const hapus = document.getElementById("hapus");
 
 hitung.addEventListener("click", (event) => {
-    const celcius = parseInt(document.getElementById("suhuCelcius").value);
+    const celcius = parseInt(document.getElementById("inputCelcius").value);
     const reamur = 4 / 5 * celcius;
     const fahrenheit = (9 / 5 * celcius) + 32;
     const kelvin = celcius + 273;
@@ -40,5 +45,12 @@ hitung.addEventListener("click", (event) => {
     document.getElementById("reamur").textContent = reamur;
     document.getElementById("fahrenheit").textContent = fahrenheit;
     document.getElementById("kelvin").textContent = kelvin;
+});
+
+hapus.addEventListener("click", (event) => {
+    document.getElementById("inputCelcius").value = "";
+    document.getElementById("reamur").textContent = "";
+    document.getElementById("fahrenheit").textContent = "";
+    document.getElementById("kelvin").textContent = "";
 });
 ```
