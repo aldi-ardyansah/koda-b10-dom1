@@ -14,7 +14,7 @@ hitung.addEventListener("click", (event) => {
 
 hapus.addEventListener("click", (event) => {
     document.getElementById("inputCelcius").value = "";
-    document.getElementById("reamur").textContent = "";
-    document.getElementById("fahrenheit").textContent = "";
-    document.getElementById("kelvin").textContent = "";
+    document.getElementById("reamur").textContent = "-";
+    document.getElementById("fahrenheit").textContent = "-";
+    document.getElementById("kelvin").textContent = "-";
 });

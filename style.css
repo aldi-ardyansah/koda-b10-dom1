@@ -38,12 +38,6 @@ body {
     gap: 8px;
 }
 
-.output {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
 .buttons {
     display: flex;
     flex-direction: row;
@@ -79,4 +73,36 @@ body {
     margin-left: auto;
     padding: 6px 12px;
     justify-content: center;
+}
+
+.output {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.output-text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.output-value {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: auto;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.output-value > span {
+    margin-left: auto;
+}
+
+.output-unit {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: fit-content;
 }
