@@ -20,7 +20,7 @@
         <div class="card">
             <h2 class="heading">Program Konversi Suhu</h2>
             <div class="input">
-                <label for="suhuCelcius">Masukan suhu dalam Celcius:</label>
+                <label for="suhuCelcius">Masukan suhu dalam Celcius (°C):</label>
                 <input id="inputCelcius" type="number" autofocus>
                 <div class="buttons">
                     <button id="hitung">Hitung</button>
@@ -28,14 +28,20 @@
                 </div>
             </div>
             <div class="output">
-                <div>
-                    Suhu dalam Reamur:&nbsp;<span id="reamur"></span>
+                <div class="output-text">
+                    <span>Suhu dalam Reamur:</span>
+                    <span>Suhu dalam Fahrenheit:</span>
+                    <span>Suhu dalam Kelvin:</span>
                 </div>
-                <div>
-                    Suhu dalam Fahrenheit:&nbsp;<span id="fahrenheit"></span>
+                <div class="output-value">
+                    <span id="reamur">-</span>
+                    <span id="fahrenheit">-</span>
+                    <span id="kelvin">-</span>
                 </div>
-                <div>
-                    Suhu dalam Kelvin:&nbsp;<span id="kelvin"></span>
+                <div class="output-unit">
+                    <span id="reamur">°R</span>
+                    <span id="fahrenheit">°F</span>
+                    <span id="kelvin">°K</span>
                 </div>
             </div>
         </div>
@@ -64,9 +70,9 @@ hitung.addEventListener("click", (event) => {
 
 hapus.addEventListener("click", (event) => {
     document.getElementById("inputCelcius").value = "";
-    document.getElementById("reamur").textContent = "";
-    document.getElementById("fahrenheit").textContent = "";
-    document.getElementById("kelvin").textContent = "";
+    document.getElementById("reamur").textContent = "-";
+    document.getElementById("fahrenheit").textContent = "-";
+    document.getElementById("kelvin").textContent = "-";
 });
 ```
 
@@ -112,12 +118,6 @@ body {
     gap: 8px;
 }
 
-.output {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
 .buttons {
     display: flex;
     flex-direction: row;
@@ -153,5 +153,37 @@ body {
     margin-left: auto;
     padding: 6px 12px;
     justify-content: center;
+}
+
+.output {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.output-text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.output-value {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: auto;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.output-value > span {
+    margin-left: auto;
+}
+
+.output-unit {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: fit-content;
 }
 ```
