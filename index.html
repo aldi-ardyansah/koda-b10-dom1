@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 1</title>
+</head>
+<body>
+    <label for="suhuCelcius">Masukan suhu dalam Celcius:</label>
+    <br>
+    <input type="number" id="suhuCelcius" autofocus>
+    <br>
+    <button id="hitung">Hitung</button>
+    <br><br>
+    Suhu dalam Reamur:&nbsp;<span id="reamur"></span>
+    <br>
+    Suhu dalam Fahrenheit:&nbsp;<span id="fahrenheit"></span>
+    <br>
+    Suhu dalam Kelvin:&nbsp;<span id="kelvin"></span>
+    <script>
+        const hitung = document.getElementById("hitung");
+
+        hitung.addEventListener("click", (event) => {
+            const celcius = parseInt(document.getElementById("suhuCelcius").value);
+            const reamur = 4 / 5 * celcius;
+            const fahrenheit = (9 / 5 * celcius) + 32;
+            const kelvin = celcius + 273;
+
+            document.getElementById("reamur").textContent = reamur;
+            document.getElementById("fahrenheit").textContent = fahrenheit;
+            document.getElementById("kelvin").textContent = kelvin;
+        });
+    </script>
+</body>
+</html>
