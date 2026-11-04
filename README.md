@@ -2,7 +2,32 @@
 
 ## Membuat Program Konversi Suhu
 
-### Kode
+### Kode HTML
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 1</title>
+</head>
+<body>
+    <label for="suhuCelcius">Masukan suhu dalam Celcius:</label>
+    <br>
+    <input type="number" id="suhuCelcius" autofocus>
+    <br>
+    <button id="hitung">Hitung</button>
+    <br><br>
+    Suhu dalam Reamur:&nbsp;<span id="reamur"></span>
+    <br>
+    Suhu dalam Fahrenheit:&nbsp;<span id="fahrenheit"></span>
+    <br>
+    Suhu dalam Kelvin:&nbsp;<span id="kelvin"></span>
+</body>
+</html>
+```
+
+### Kode JavaScript
 ```javascript
 const hitung = document.getElementById("hitung");
 
