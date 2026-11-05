@@ -1,4 +1,4 @@
-# DOM 1
+# Document Object Manipulation 1
 
 ## Membuat Program Konversi Suhu
 
