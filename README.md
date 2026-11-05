@@ -1,4 +1,4 @@
-# Document Object Manipulation 1
+# Document Object Model 1
 
 ## Membuat Program Konversi Suhu
 
