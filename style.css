@@ -14,13 +14,31 @@ body {
 }
 
 .main {
-    width: 50%;
-    justify-self: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 10px;
+    justify-self: center;   
 }
 
-.card {
+.card-1 {
     display: flex;
     flex-direction: column;
+    width: 25%;
+    padding: 16px;
+    background-color: var(--bg-color-white);
+    border: 1px solid var(--border-color-gray);
+    border-radius: 12px;
+    gap: 16px;
+    height: fit-content;
+    position: sticky;
+    top: 10px;
+}
+
+.card-2 {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
     padding: 16px;
     background-color: var(--bg-color-white);
     border: 1px solid var(--border-color-gray);
