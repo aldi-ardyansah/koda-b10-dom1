@@ -10,14 +10,16 @@
     <div class="main">
         <div class="card">
             <h2 class="heading">Program Konversi Suhu</h2>
-            <div class="input">
-                <label for="suhuCelcius">Masukan suhu dalam Celcius (°C):</label>
-                <input id="inputCelcius" type="number" autofocus>
-                <div class="buttons">
-                    <button id="hitung">Hitung</button>
-                    <button id="hapus">Hapus</button>
+            <form>
+                <div class="input">
+                    <label for="suhuCelcius">Masukan suhu dalam Celcius (°C):</label>
+                    <input id="inputCelcius" type="number" name="inputCelcius" autofocus>
+                    <div class="buttons">
+                        <button id="hitung" type="submit">Hitung</button>
+                        <button id="hapus">Hapus</button>
+                    </div>
                 </div>
-            </div>
+            </form>
             <div class="output">
                 <div class="output-text">
                     <span>Suhu dalam Reamur:</span>
@@ -34,6 +36,24 @@
                     <span id="fahrenheit">°F</span>
                     <span id="kelvin">°K</span>
                 </div>
+            </div>
+            <div class="table">
+                <h2>Tabel Histori Konversi</h2>
+                <table id="history">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>&deg;C</th>
+                            <th>&deg;R</th>
+                            <th>&deg;F</th>
+                            <th>&deg;K</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
